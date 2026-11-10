@@ -1,0 +1,27 @@
+---
+title: "Resources"
+subtitle: "Data sources and tools I use."
+---
+
+## Peru open data
+
+::: resource-list
+- [National Open Data Platform](https://www.datosabiertos.gob.pe) <small>Datasets from the Peruvian government (in Spanish).</small>
+- [INEI](https://www.inei.gob.pe) <small>National census and surveys (ENAHO, ENDES, ENEDIS).</small>
+- [ESCALE (Minedu)](https://escale.minedu.gob.pe) <small>Education quality statistics.</small>
+:::
+
+## Data collection
+
+::: resource-list
+- [KoboToolbox](https://www.kobotoolbox.org) <small>Surveys with XLSForm and API access.</small>
+- [SurveyCTO](https://www.surveycto.com) <small>Field data collection with quality control.</small>
+:::
+
+## Analysis and publishing
+
+::: resource-list
+- [R for Data Science (2e)](https://r4ds.hadley.nz) <small>A free book to get started with the tidyverse.</small>
+- [Quarto](https://quarto.org) <small>Documents, slides and this website.</small>
+- [GoatCounter](https://www.goatcounter.com) <small>Privacy-friendly visitor counts.</small>
+:::

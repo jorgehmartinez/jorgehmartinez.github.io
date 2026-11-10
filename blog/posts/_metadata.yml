@@ -1,0 +1,5 @@
+toc: true
+author: "Jorge Huanca Martinez"
+title-block-banner: false
+# Cada entrada declara su idioma con `lang: es` o `lang: en` en su encabezado.
+# Ese valor decide el idioma del menú y de los textos de Quarto en la página.

@@ -1,0 +1,110 @@
+---
+title: "Sobre mí"
+description: "Medición, evaluación y datos para la educación y el desarrollo social."
+---
+
+Soy psicólogo por la UNMSM y especialista en medición, evaluación y datos, con más de 5 años de experiencia en programas sociales y educativos. He diseñado sistemas regionales de recolección y monitoreo de datos, liderado evaluaciones cuasi-experimentales en América Latina y elaborado reportes de resultados para organismos multilaterales. Hoy trabajo en el Ministerio de Educación del Perú, en evaluaciones nacionales a docentes y directivos.
+
+Me interesan la **evaluación de impacto**, la **psicometría**, las **ciencias del comportamiento** y la **visualización de datos**.
+
+## Experiencia {#experiencia}
+
+::: cv-item
+### Consultor de Análisis de Datos — Ministerio de Educación del Perú (MINEDU)
+[feb 2024 – actualidad · Dirección de Evaluación Docente]{.cv-meta}
+
+- Pipelines de control de calidad, consistencia y calificación para evaluaciones nacionales a docentes y directivos, con más de 500 mil postulantes.
+- Dashboards en Power BI para el seguimiento del desempeño docente (modelo estrella, más de 2,8 millones de registros y 12 años de historia).
+- Capacitación a equipos técnicos y no técnicos en medición educativa y psicometría.
+:::
+
+::: cv-item
+### Consultor Regional de Evaluación — JA Americas
+[abr 2023 – sep 2025 · remoto]{.cv-meta}
+
+- Evaluaciones cuasi-experimentales de más de 10 programas educativos en Canadá y América Latina, con instrumentos adaptados al español, inglés y portugués.
+- Marcos regionales de recolección, almacenamiento, monitoreo y procesamiento de datos con control de calidad, y capacitación a las oficinas de cada país.
+- Reportes técnicos en inglés y español para organismos multilaterales y socios corporativos de los sectores tecnológico y financiero.
+- Coordinación con Fundraising, TI y Comunicaciones.
+:::
+
+::: cv-item
+### Consultor de Análisis de Datos — SUNEDU
+[ago 2022 – mar 2023]{.cv-meta}
+
+- Procesamiento de datos para 3 normativas nacionales de educación superior.
+- Automatización de reportes para el monitoreo de indicadores de calidad (KPI).
+:::
+
+::: cv-item
+### Analista Jr. de Investigación — Datum Internacional
+[feb 2022 – ago 2022]{.cv-meta}
+
+- Estudios de mercado y encuestas de percepción para clientes multinacionales.
+- Diseño de instrumentos: entrevistas, encuestas y comunidades en línea.
+:::
+
+::: cv-item
+### Asistente de Investigación — University of Pittsburgh
+[nov 2021 – may 2022 · con el Dr. José Incio]{.cv-meta}
+
+- Procesamiento de datos y reportes de experimentos en ciencias del comportamiento.
+- Diseño, implementación y monitoreo de encuestas en línea con Qualtrics y Google Data Studio.
+:::
+
+::: cv-item
+### Asistente de Consultoría — Ministerio de la Mujer y Poblaciones Vulnerables (MIMP)
+[nov 2021 – ene 2022]{.cv-meta}
+
+- Indicadores socioeconómicos para la Política Regional de la Persona con Discapacidad de Cajamarca.
+- Análisis de encuestas nacionales (ENAHO, ENDES, ENEDIS).
+:::
+
+::: cv-item
+### Practicante de Comportamiento del Consumidor — Banco de Crédito del Perú (BCP)
+[ene 2021 – dic 2021]{.cv-meta}
+
+- Estudios mixtos sobre posicionamiento y educación financiera.
+- Diseño y difusión de proyectos de ciencias del comportamiento.
+:::
+
+## Formación
+
+::: cv-item
+### Especialización en Ciencia de Datos para Ciencias Sociales y Gestión Pública
+[Pontificia Universidad Católica del Perú (PUCP) · 2022 – 2023]{.cv-meta}
+:::
+
+::: cv-item
+### Licenciatura en Psicología
+[Universidad Nacional Mayor de San Marcos (UNMSM) · 2016 – 2021 · quinto superior]{.cv-meta}
+:::
+
+**Cursos y certificaciones:** Regresión Discontinua para la Inferencia Causal (PUCP, 2025) · Winter School in Advanced Methods for Social Sciences (Q-LAB PUCP, 2025) · Data Analytics for Social Organizations (ZIGLA, 2024) · Gestión y Visualización de Datos con Power BI y Tableau (PUCP, 2023) · Procesamiento de Lenguaje Natural (PUCP, 2023) · Python Intermedio (PUCP, 2023) · Data Visualization with R (IBM, 2023) · Análisis de Datos Avanzado con R (UNALM, 2022).
+
+## Publicaciones
+
+- *Modelo de licenciamiento de programas de pregrado de educación* (SUNEDU, 2023). [Ver en el repositorio del Minedu](https://repositorio.minedu.gob.pe/handle/20.500.12799/10352).
+- *Política Regional de la Persona con Discapacidad de Cajamarca al 2030* (2022).
+
+## Reconocimientos
+
+- Proyecto ganador del Fondo de Iniciativas de Investigación e Innovación del Vicerrectorado de Investigación y Posgrado (2021): *Variables predictoras del rendimiento académico en estudiantes de una universidad pública en el contexto del COVID-19*.
+
+## Voluntariado
+
+- **Decision Lab PUCP**, equipo de coordinación de investigación (2020 – 2022): apoyo metodológico para diseñar estrategias costo-efectivas frente a retos sociales, con ciencias del comportamiento.
+- **Yachay Wasi**, equipo de investigación educativa (2022).
+
+## Herramientas
+
+- **Recolección de datos:** KoboToolbox (XLSForms, API), SurveyCTO, Qualtrics, FormAssembly, Salesforce.
+- **Análisis:** R, Python, SQL, SPSS, Stata, Excel.
+- **Visualización y reportes:** Power BI, Looker Studio, R Shiny, Quarto y R Markdown.
+- **Idiomas:** español (nativo), inglés (profesional).
+
+## Contacto
+
+- Correo: [jorgeahm98@gmail.com](mailto:jorgeahm98@gmail.com)
+- LinkedIn: [jorgehuanca](https://www.linkedin.com/in/jorgehuanca/)
+- GitHub: [jorgehmartinez](https://github.com/jorgehmartinez)

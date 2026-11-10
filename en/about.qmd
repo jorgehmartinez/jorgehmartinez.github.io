@@ -1,0 +1,110 @@
+---
+title: "About"
+description: "Measurement, evaluation and data for education and social development."
+---
+
+I'm a psychologist (UNMSM) and a measurement, evaluation and data specialist with over 5 years of experience in social and education programs. I've designed regional data collection and monitoring systems, led quasi-experimental evaluations across Latin America, and written results reports for multilateral donors. I currently work at Peru's Ministry of Education on nationwide evaluations of teachers and school directors.
+
+My interests are **impact evaluation**, **psychometrics**, **behavioral science** and **data visualization**.
+
+## Experience {#experience}
+
+::: cv-item
+### Data Analyst Consultant — Ministry of Education of Peru (MINEDU)
+[Feb 2024 – present · Teacher Evaluation Directorate]{.cv-meta}
+
+- End-to-end pipelines for quality assurance, consistency analysis and scoring across nationwide evaluations of teachers and school directors, reaching 500K+ candidates.
+- Power BI dashboards for teacher performance tracking (star schema, 2.8M+ records, 12 years of history).
+- Trained technical and non-technical teams in educational measurement and psychometrics.
+:::
+
+::: cv-item
+### Regional Evaluation Consultant — JA Americas
+[Apr 2023 – Sep 2025 · remote]{.cv-meta}
+
+- Quasi-experimental evaluations across 10+ educational programs in Canada and Latin America, adapting instruments to Spanish, English and Portuguese.
+- Regional frameworks for data collection, storage, monitoring and quality-controlled processing, with training for local country chapters.
+- Briefs and technical reports in English and Spanish for multilateral organizations and corporate partners in the tech and financial sectors.
+- Ongoing collaboration with Fundraising, IT and Communications.
+:::
+
+::: cv-item
+### Data Analyst Consultant — SUNEDU
+[Aug 2022 – Mar 2023]{.cv-meta}
+
+- Led data processing for 3 nationwide higher education regulations.
+- Automated reporting workflows for quality-standard KPIs.
+:::
+
+::: cv-item
+### Junior Research Analyst — Datum Internacional
+[Feb 2022 – Aug 2022]{.cv-meta}
+
+- Market research studies and perception surveys for multinational clients.
+- Designed interviews, surveys and online communities.
+:::
+
+::: cv-item
+### Research Assistant — University of Pittsburgh
+[Nov 2021 – May 2022 · with Dr. José Incio]{.cv-meta}
+
+- Data processing and reports for behavioral science experiments.
+- Designed, implemented and monitored online surveys with Qualtrics and Google Data Studio.
+:::
+
+::: cv-item
+### Consulting Assistant — Ministry of Women and Vulnerable Populations of Peru (MIMP)
+[Nov 2021 – Jan 2022]{.cv-meta}
+
+- Socioeconomic indicators for the Regional Policy for Persons with Disabilities in Cajamarca.
+- Analysis of national surveys (ENAHO, ENDES, ENEDIS).
+:::
+
+::: cv-item
+### Behavior Consumer Intern — Banco de Crédito del Perú (BCP)
+[Jan 2021 – Dec 2021]{.cv-meta}
+
+- Mixed-method studies on market positioning and financial education.
+- Design and dissemination of behavioral science projects.
+:::
+
+## Education
+
+::: cv-item
+### Specialization in Data Science for Social Sciences and Public Management
+[Pontificia Universidad Católica del Perú (PUCP) · 2022 – 2023]{.cv-meta}
+:::
+
+::: cv-item
+### B.A. in Psychology
+[Universidad Nacional Mayor de San Marcos (UNMSM) · 2016 – 2021 · top fifth of the class]{.cv-meta}
+:::
+
+**Courses and certificates:** Regression Discontinuity for Causal Inference (PUCP, 2025) · Winter School in Advanced Methods for Social Sciences (Q-LAB PUCP, 2025) · Data Analytics for Social Organizations (ZIGLA, 2024) · Data Management and Visualization with Power BI and Tableau (PUCP, 2023) · Natural Language Processing (PUCP, 2023) · Intermediate Python (PUCP, 2023) · Data Visualization with R (IBM, 2023) · Advanced Data Analysis with R (UNALM, 2022).
+
+## Publications
+
+- *Modelo de licenciamiento de programas de pregrado de educación* [Licensing model for undergraduate education programs] (SUNEDU, 2023). [View in Minedu's repository](https://repositorio.minedu.gob.pe/handle/20.500.12799/10352).
+- *Política Regional de la Persona con Discapacidad de Cajamarca al 2030* [Regional Policy for Persons with Disabilities of Cajamarca to 2030] (2022).
+
+## Awards
+
+- Winning project of the Research and Innovation Initiatives Fund, Vice-Rectorate for Research and Graduate Studies (2021): *Predictors of academic performance among students at a public university during COVID-19*.
+
+## Volunteering
+
+- **Decision Lab PUCP**, research coordination team (2020 – 2022): methodological support for designing cost-effective strategies for social challenges, applying behavioral science.
+- **Yachay Wasi**, educational research team (2022).
+
+## Tools
+
+- **Data collection:** KoboToolbox (XLSForms, API), SurveyCTO, Qualtrics, FormAssembly, Salesforce.
+- **Analysis:** R, Python, SQL, SPSS, Stata, Excel.
+- **Visualization and reporting:** Power BI, Looker Studio, R Shiny, Quarto and R Markdown.
+- **Languages:** Spanish (native), English (full professional proficiency).
+
+## Contact
+
+- Email: [jorgeahm98@gmail.com](mailto:jorgeahm98@gmail.com)
+- LinkedIn: [jorgehuanca](https://www.linkedin.com/in/jorgehuanca/)
+- GitHub: [jorgehmartinez](https://github.com/jorgehmartinez)

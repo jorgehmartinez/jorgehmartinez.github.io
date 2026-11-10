@@ -1,0 +1,27 @@
+---
+title: "Recursos"
+subtitle: "Fuentes de datos y herramientas que uso."
+---
+
+## Datos abiertos del Perú
+
+::: resource-list
+- [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe) <small>Conjuntos de datos del Estado peruano.</small>
+- [INEI](https://www.inei.gob.pe) <small>Censos y encuestas nacionales (ENAHO, ENDES, ENEDIS).</small>
+- [ESCALE (Minedu)](https://escale.minedu.gob.pe) <small>Estadísticas de la calidad educativa.</small>
+:::
+
+## Recolección de datos
+
+::: resource-list
+- [KoboToolbox](https://www.kobotoolbox.org) <small>Encuestas con XLSForm y acceso por API.</small>
+- [SurveyCTO](https://www.surveycto.com) <small>Recolección en campo con control de calidad.</small>
+:::
+
+## Análisis y publicación
+
+::: resource-list
+- [R para Ciencia de Datos (2.ª ed.)](https://es.r4ds.hadley.nz) <small>Libro libre para empezar con el tidyverse.</small>
+- [Quarto](https://quarto.org) <small>Documentos, presentaciones y este sitio.</small>
+- [GoatCounter](https://www.goatcounter.com) <small>Conteo de visitas sin cookies.</small>
+:::

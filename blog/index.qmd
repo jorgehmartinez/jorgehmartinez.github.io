@@ -1,0 +1,14 @@
+---
+title: "Blog"
+subtitle: "Notas, tutoriales y análisis."
+page-layout: full
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  sort-ui: [date, title]
+  filter-ui: true
+  feed: true
+  fields: [date, title, description, categories]
+---

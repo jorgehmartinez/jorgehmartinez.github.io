@@ -1,0 +1,161 @@
+<script>
+/* =========================================================
+   1. IDIOMA: traduce el menú en páginas en inglés y arma el
+      botón ES/EN que lleva a la página equivalente.
+   ========================================================= */
+(function () {
+  var html = document.documentElement;
+  var isEn = (html.lang || "").toLowerCase().indexOf("en") === 0;
+  var offset = document.querySelector('meta[name="quarto:offset"]');
+  var root = new URL(offset ? offset.content : "./", location.href);
+
+  function rel(u) {
+    var p = decodeURI(new URL(u, location.href).pathname);
+    var r = decodeURI(root.pathname);
+    if (p.indexOf(r) === 0) p = p.slice(r.length);
+    return p.replace(/index\.html$/, "");
+  }
+  function abs(p) { return new URL(p, root).href; }
+
+  // Páginas equivalentes (español -> inglés). Agrega aquí las que crees.
+  var ES2EN = {
+    "": "en/",
+    "blog/": "en/blog/",
+    "proyectos/": "en/projects/",
+    "sobre-mi.html": "en/about.html",
+    "recursos.html": "en/resources.html"
+  };
+  var EN2ES = {};
+  Object.keys(ES2EN).forEach(function (k) { EN2ES[ES2EN[k]] = k; });
+
+  var NAV_EN = {
+    "blog/": ["en/blog/", "Blog"],
+    "proyectos/": ["en/projects/", "Projects"],
+    "sobre-mi.html": ["en/about.html", "About"],
+    "recursos.html": ["en/resources.html", "Resources"]
+  };
+
+  var here = rel(location.href);
+  function counterpart() {
+    if (isEn) {
+      if (here in EN2ES) return EN2ES[here];
+      return here.indexOf("blog/posts/") === 0 ? "blog/" : "";
+    }
+    if (here in ES2EN) return ES2EN[here];
+    return here.indexOf("blog/posts/") === 0 ? "en/blog/" : "en/";
+  }
+
+  document.querySelectorAll("#navbarCollapse a.nav-link").forEach(function (a) {
+    var target = rel(a.href);
+    var label = a.querySelector(".menu-text");
+    if (target === "en/" && label && label.textContent.trim() === "EN") {
+      a.href = abs(counterpart());
+      label.textContent = isEn ? "ES" : "EN";
+      a.setAttribute("aria-label", isEn ? "Versión en español" : "English version");
+      a.setAttribute("hreflang", isEn ? "es" : "en");
+      a.classList.add("lang-switch");
+      a.classList.remove("active");
+      return;
+    }
+    if (isEn && NAV_EN[target]) {
+      a.href = abs(NAV_EN[target][0]);
+      if (label) label.textContent = NAV_EN[target][1];
+      var section = NAV_EN[target][0];
+      a.classList.toggle("active", here.indexOf(section) === 0);
+    }
+  });
+
+  if (isEn) {
+    var brand = document.querySelector(".navbar-brand");
+    if (brand) brand.href = abs("en/");
+  }
+  html.classList.remove("i18n-pending");
+})();
+
+/* =========================================================
+   2. TRAYECTORIA: línea de tiempo con una fila por puesto.
+      Los datos están en un bloque <script type="application/json">
+      dentro de cada página (español e inglés).
+   ========================================================= */
+(function () {
+  document.querySelectorAll(".career").forEach(function (box) {
+    var src = box.querySelector("script.career-data");
+    if (!src) return;
+    var d = JSON.parse(src.textContent);
+
+    function months(ym) { var p = ym.split("-"); return (+p[0]) * 12 + (+p[1] - 1); }
+    var now = new Date();
+    var nowYm = now.getFullYear() + "-" + (now.getMonth() + 1);
+    var y0 = +d.startYear, y1 = Math.max(+d.endYear, now.getFullYear()) + 1;
+    var t0 = y0 * 12, span = (y1 - y0) * 12;
+    function pct(m) { return ((m - t0) / span) * 100; }
+
+    var out = '<div class="career-axis" aria-hidden="true">';
+    for (var y = y0; y < y1; y++) {
+      out += '<span style="left:' + pct(y * 12) + '%">' + y + "</span>";
+    }
+    out += "</div>";
+
+    d.items.forEach(function (it, i) {
+      var a = months(it.from), b = months(it.to || nowYm) + 1;
+      var left = pct(a), width = Math.max(pct(b) - left, 1.2);
+      var label = it.role + " — " + it.org + " (" + it.dates + ")";
+      out += '<div class="career-row">' +
+        '<span class="career-org">' + it.org + "</span>" +
+        '<div class="career-track" style="--years:' + (y1 - y0) + '">' +
+        '<button type="button" class="career-bar' + (it.to ? "" : " ongoing") + '" data-i="' + i + '"' +
+        ' style="left:' + left + "%;width:" + width + "%;background:var(--s-" + it.sector + ')"' +
+        ' aria-label="' + label.replace(/"/g, "&quot;") + '"></button>' +
+        "</div></div>";
+    });
+
+    out += '<ul class="career-legend">';
+    Object.keys(d.sectors).forEach(function (k) {
+      out += '<li><i style="background:var(--s-' + k + ')"></i>' + d.sectors[k] + "</li>";
+    });
+    out += "</ul>";
+    out += '<div class="career-tip" role="tooltip" hidden></div>';
+
+    var holder = document.createElement("div");
+    holder.className = "career-body";
+    holder.innerHTML = out;
+    box.appendChild(holder);
+
+    var tip = holder.querySelector(".career-tip");
+    var pinned = null;
+
+    function show(btn) {
+      var it = d.items[+btn.dataset.i];
+      tip.innerHTML = "<strong>" + it.role + "</strong>" +
+        '<span class="career-tip-meta">' + it.org + " · " + it.dates + "</span>" +
+        (it.points && it.points.length ? "<ul><li>" + it.points.join("</li><li>") + "</li></ul>" : "");
+      tip.hidden = false;
+      var row = btn.closest(".career-row");
+      var hb = holder.getBoundingClientRect(), bb = btn.getBoundingClientRect();
+      var top = row.offsetTop + row.offsetHeight + 6;
+      var left = Math.min(Math.max(bb.left - hb.left, 0), Math.max(hb.width - tip.offsetWidth, 0));
+      tip.style.top = top + "px";
+      tip.style.left = left + "px";
+      holder.querySelectorAll(".career-bar").forEach(function (x) { x.classList.toggle("is-dim", x !== btn); });
+    }
+    function hide() {
+      if (pinned) return;
+      tip.hidden = true;
+      holder.querySelectorAll(".career-bar").forEach(function (x) { x.classList.remove("is-dim"); });
+    }
+
+    holder.querySelectorAll(".career-bar").forEach(function (btn) {
+      btn.addEventListener("mouseenter", function () { if (!pinned) show(btn); });
+      btn.addEventListener("mouseleave", hide);
+      btn.addEventListener("focus", function () { show(btn); });
+      btn.addEventListener("blur", function () { pinned = null; hide(); });
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (pinned === btn) { pinned = null; hide(); } else { pinned = btn; show(btn); }
+      });
+    });
+    document.addEventListener("click", function () { if (pinned) { pinned = null; hide(); } });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") { pinned = null; hide(); } });
+  });
+})();
+</script>

@@ -1,0 +1,72 @@
+project:
+  type: website
+  output-dir: _site
+
+lang: es
+
+website:
+  title: "Jorge Huanca Martinez"
+  description: "Medición, evaluación y datos para la educación y el desarrollo social."
+  # Dirección final una vez renombrado el repositorio a jorgehmartinez.github.io
+  site-url: "https://jorgehmartinez.github.io"
+  favicon: assets/favicon.svg
+  open-graph: true
+  navbar:
+    pinned: true
+    search: true
+    # El menú se escribe en español. En las páginas en inglés (carpeta en/)
+    # includes/site.html traduce las etiquetas y ajusta los enlaces.
+    right:
+      - text: "Blog"
+        href: blog/index.qmd
+      - text: "Proyectos"
+        href: proyectos/index.qmd
+      - text: "Sobre mí"
+        href: sobre-mi.qmd
+      - text: "Recursos"
+        href: recursos.qmd
+      - text: "EN"
+        href: en/index.qmd
+        aria-label: "English version"
+    tools:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jorgehuanca/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/jorgehmartinez
+        aria-label: GitHub
+      - icon: envelope
+        href: mailto:jorgeahm98@gmail.com
+        aria-label: Email
+  page-footer:
+    left: "© 2026 Jorge Huanca Martinez"
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jorgehuanca/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/jorgehmartinez
+        aria-label: GitHub
+      - icon: envelope
+        href: mailto:jorgeahm98@gmail.com
+        aria-label: Email
+      - icon: rss
+        href: blog/index.xml
+        aria-label: RSS
+
+format:
+  html:
+    theme: [default, styles/custom.scss]
+    include-in-header: includes/head.html
+    include-after-body: includes/site.html
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    title-block-banner: false
+    date-format: "D MMM YYYY"
+    code-copy: true
+
+# Los resultados de código (R, Python) se guardan en _freeze/ y se suben al repo.
+# Así GitHub Actions no necesita R ni Python para publicar el sitio.
+execute:
+  freeze: auto

@@ -1,0 +1,143 @@
+---
+pagetitle: "Jorge Huanca Martinez — Medición, evaluación y datos"
+description: "Medición, evaluación y datos para la educación y el desarrollo social."
+page-layout: custom
+listing:
+  - id: latest-posts
+    contents: blog/posts
+    type: default
+    max-items: 4
+    sort: "date desc"
+    fields: [date, title, description]
+    sort-ui: false
+    filter-ui: false
+  - id: featured-projects
+    contents: proyectos/proyectos.yml
+    type: grid
+    grid-columns: 3
+    max-items: 3
+    sort: "date desc"
+    fields: [image, title, description]
+    sort-ui: false
+    filter-ui: false
+---
+
+::: {.sec .sec-first .intro}
+::: inner
+
+# Mido, evalúo y analizo datos para mejorar la educación y los programas sociales.
+
+::: lede
+Soy psicólogo y especialista en medición, evaluación y datos, con más de 5 años de experiencia en programas sociales y educativos. He liderado [evaluaciones cuasi-experimentales](sobre-mi.qmd#experiencia) en América Latina, preparo [materiales y herramientas](proyectos/index.qmd) para analizar datos con R y Python, y comparto lo que aprendo en el [blog](blog/index.qmd).
+:::
+
+::: btn-row
+[Ver proyectos](proyectos/index.qmd){.btn-solid}
+[Sobre mí](sobre-mi.qmd){.btn-line}
+:::
+
+```{=html}
+<div class="career">
+<p class="career-intro">Un vistazo a mi trayectoria:</p>
+<script type="application/json" class="career-data">
+{
+  "startYear": 2021,
+  "endYear": 2026,
+  "sectors": {
+    "public": "Sector público",
+    "international": "Organización internacional",
+    "academia": "Academia",
+    "private": "Sector privado"
+  },
+  "items": [
+    {"org": "MINEDU", "role": "Consultor de Análisis de Datos", "sector": "public",
+     "from": "2024-02", "to": null, "dates": "feb 2024 – actualidad",
+     "points": ["Pipelines de control de calidad, consistencia y calificación para evaluaciones nacionales a docentes y directivos (+500 mil postulantes).",
+                "Dashboards en Power BI para el seguimiento del desempeño docente (modelo estrella, +2,8 millones de registros, 12 años de historia).",
+                "Capacitación a equipos técnicos y no técnicos en medición educativa y psicometría."]},
+    {"org": "JA Americas", "role": "Consultor Regional de Evaluación", "sector": "international",
+     "from": "2023-04", "to": "2025-09", "dates": "abr 2023 – sep 2025",
+     "points": ["Evaluaciones cuasi-experimentales de más de 10 programas educativos en Canadá y América Latina, con instrumentos en español, inglés y portugués.",
+                "Marcos regionales de recolección, almacenamiento, monitoreo y procesamiento de datos con control de calidad.",
+                "Reportes técnicos en inglés y español para organismos multilaterales y socios corporativos."]},
+    {"org": "SUNEDU", "role": "Consultor de Análisis de Datos", "sector": "public",
+     "from": "2022-08", "to": "2023-03", "dates": "ago 2022 – mar 2023",
+     "points": ["Procesamiento de datos para 3 normativas nacionales de educación superior.",
+                "Automatización de reportes de indicadores de calidad (KPI)."]},
+    {"org": "Datum", "role": "Analista Jr. de Investigación", "sector": "private",
+     "from": "2022-02", "to": "2022-08", "dates": "feb 2022 – ago 2022",
+     "points": ["Estudios de mercado y encuestas de percepción para clientes multinacionales.",
+                "Diseño de instrumentos: entrevistas, encuestas y comunidades en línea."]},
+    {"org": "U. Pittsburgh", "role": "Asistente de Investigación", "sector": "academia",
+     "from": "2021-11", "to": "2022-05", "dates": "nov 2021 – may 2022",
+     "points": ["Procesamiento de datos y reportes de experimentos en ciencias del comportamiento, con el Dr. José Incio.",
+                "Diseño y monitoreo de encuestas en línea con Qualtrics y Google Data Studio."]},
+    {"org": "MIMP", "role": "Asistente de Consultoría", "sector": "public",
+     "from": "2021-11", "to": "2022-01", "dates": "nov 2021 – ene 2022",
+     "points": ["Indicadores socioeconómicos para la Política Regional de la Persona con Discapacidad de Cajamarca.",
+                "Análisis de encuestas nacionales (ENAHO, ENDES, ENEDIS)."]},
+    {"org": "BCP", "role": "Practicante de Comportamiento del Consumidor", "sector": "private",
+     "from": "2021-01", "to": "2021-12", "dates": "ene 2021 – dic 2021",
+     "points": ["Estudios mixtos sobre posicionamiento y educación financiera.",
+                "Diseño y difusión de proyectos de ciencias del comportamiento."]}
+  ]
+}
+</script>
+</div>
+<p class="career-note">Pasa el cursor o toca una barra para ver el detalle. <a href="sobre-mi.html#experiencia">Experiencia completa →</a></p>
+```
+
+:::
+:::
+
+::: {.sec .sec-white}
+::: inner
+::: eyebrow
+Blog
+:::
+
+## Últimas entradas
+
+::: {#latest-posts}
+:::
+
+[Ver todas las entradas →](blog/index.qmd){.more-link}
+:::
+:::
+
+::: sec
+::: inner
+::: eyebrow
+Proyectos
+:::
+
+## Materiales y herramientas
+
+::: {#featured-projects}
+:::
+
+[Ver todos los proyectos →](proyectos/index.qmd){.more-link}
+:::
+:::
+
+::: {.sec .sec-white}
+::: inner
+::: eyebrow
+Intereses
+:::
+
+## Lo que me mueve
+
+::: lede
+Me interesa que la evidencia sea rigurosa, reproducible y fácil de entender para quienes toman decisiones sobre programas educativos y sociales. [Conoce mi trayectoria →](sobre-mi.qmd)
+:::
+
+::: chips
+[evaluación de impacto]{}
+[psicometría]{}
+[ciencias del comportamiento]{}
+[visualización de datos]{}
+[R y Python]{}
+:::
+:::
+:::

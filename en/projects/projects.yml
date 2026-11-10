@@ -1,0 +1,43 @@
+# English version of proyectos/proyectos.yml (keep both in sync).
+
+- title: "Advanced Applied Econometrics"
+  description: "Course materials for the Specialization in Data Science for Social Sciences and Public Management (PUCP)."
+  path: https://github.com/jorgehmartinez/Econometrics_PUCP
+  image: /proyectos/img/econometria.svg
+  date: 2026-09-01
+  categories: [teaching, econometrics]
+
+- title: "Python Intensive Course"
+  description: "A Jupyter Book with the Python lectures of PUCP's Data Science specialization."
+  path: https://jorgehmartinez.github.io/jb-python-course
+  image: /proyectos/img/python.svg
+  date: 2023-12-30
+  categories: [teaching, Python]
+
+- title: "Decision Lab: charts with INEI data"
+  description: "A research proposal by Decision Lab PUCP, with visualizations of official statistics."
+  path: https://jorgehmartinez.github.io/Decision-Lab/INEI-graficos.html
+  image: /proyectos/img/decision-lab.svg
+  date: 2023-01-05
+  categories: [behavioral science, visualization]
+
+- title: "ggplot2 chart gallery"
+  description: "A collection of charts made with ggplot2, with their R code."
+  path: https://github.com/jorgehmartinez/graficos-ggplot2
+  image: /proyectos/img/ggplot2.svg
+  date: 2023-01-04
+  categories: [R, visualization]
+
+- title: "VRAEM map"
+  description: "A geopolitical and hydrographic map of Peru's VRAEM region."
+  path: https://github.com/jorgehmartinez/mapa_vraem
+  image: /proyectos/img/mapa.svg
+  date: 2023-01-03
+  categories: [maps]
+
+- title: "Data visualization with R"
+  description: "A xaringan slide deck on the principles and practice of visualization in R."
+  path: https://jorgehmartinez.github.io/Visualizacion_datos_con_R/Demo_xaringan#1
+  image: /proyectos/img/slides.svg
+  date: 2022-07-09
+  categories: [teaching, R, visualization]

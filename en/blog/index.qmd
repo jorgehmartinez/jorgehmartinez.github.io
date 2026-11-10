@@ -1,0 +1,14 @@
+---
+title: "Blog"
+subtitle: "Notes, tutorials and analyses. Posts are written in English or Spanish."
+page-layout: full
+listing:
+  contents: "../../blog/posts/*/index.qmd"
+  type: default
+  sort: "date desc"
+  categories: true
+  sort-ui: [date, title]
+  filter-ui: true
+  feed: false
+  fields: [date, title, description, categories]
+---

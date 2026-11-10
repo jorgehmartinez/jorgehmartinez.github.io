@@ -1,0 +1,13 @@
+/.quarto/
+/_site/
+.Rproj.user/
+.Rhistory
+.RData
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# OJO: la carpeta _freeze/ SÍ debe subirse al repositorio.
+
+**/*.quarto_ipynb

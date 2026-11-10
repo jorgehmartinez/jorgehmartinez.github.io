@@ -1,0 +1,47 @@
+# Cada proyecto es un bloque. Para agregar uno, copia un bloque y cambia los datos.
+# La versión en inglés está en en/projects/projects.yml (actualiza ambas).
+# "path": enlace externo (sitio, repositorio, informe) o una página del sitio.
+# "image": va en proyectos/img/ y se escribe con la ruta completa desde la raíz,
+#          por ejemplo /proyectos/img/mi-imagen.png (ideal: proporción 16:9).
+
+- title: "Econometría Aplicada Avanzada"
+  description: "Material del curso de la Especialización en Ciencia de Datos para Ciencias Sociales y Gestión Pública (PUCP)."
+  path: https://github.com/jorgehmartinez/Econometrics_PUCP
+  image: /proyectos/img/econometria.svg
+  date: 2026-09-01
+  categories: [docencia, econometría]
+
+- title: "Curso intensivo de Python"
+  description: "Libro en Jupyter Book con las clases de Python de la especialización en Ciencia de Datos de la PUCP."
+  path: https://jorgehmartinez.github.io/jb-python-course
+  image: /proyectos/img/python.svg
+  date: 2023-12-30
+  categories: [docencia, Python]
+
+- title: "Decision Lab: gráficos con datos del INEI"
+  description: "Propuesta de investigación del laboratorio Decision Lab PUCP, con visualizaciones de datos oficiales."
+  path: https://jorgehmartinez.github.io/Decision-Lab/INEI-graficos.html
+  image: /proyectos/img/decision-lab.svg
+  date: 2023-01-05
+  categories: [ciencias del comportamiento, visualización]
+
+- title: "Galería de gráficos con ggplot2"
+  description: "Colección de gráficos elaborados con ggplot2, con su código en R."
+  path: https://github.com/jorgehmartinez/graficos-ggplot2
+  image: /proyectos/img/ggplot2.svg
+  date: 2023-01-04
+  categories: [R, visualización]
+
+- title: "Mapa del VRAEM"
+  description: "Mapa geopolítico e hidrográfico de la zona del VRAEM."
+  path: https://github.com/jorgehmartinez/mapa_vraem
+  image: /proyectos/img/mapa.svg
+  date: 2023-01-03
+  categories: [mapas]
+
+- title: "Visualización de datos con R"
+  description: "Presentación en xaringan sobre principios y práctica de la visualización con R."
+  path: https://jorgehmartinez.github.io/Visualizacion_datos_con_R/Demo_xaringan#1
+  image: /proyectos/img/slides.svg
+  date: 2022-07-09
+  categories: [docencia, R, visualización]

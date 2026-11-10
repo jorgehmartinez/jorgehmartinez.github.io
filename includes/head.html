@@ -1,0 +1,21 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Oculta el menú en páginas en inglés hasta que se traduzca (evita un parpadeo en español). -->
+<script>
+  if ((document.documentElement.lang || "").toLowerCase().indexOf("en") === 0) {
+    document.documentElement.classList.add("i18n-pending");
+  }
+</script>
+<style>.i18n-pending #navbarCollapse, .i18n-pending .navbar-brand { visibility: hidden; }</style>
+
+<!--
+  CONTEO DE VISITAS (GoatCounter, gratis y sin cookies)
+  1. Crea tu cuenta en goatcounter.com y elige un código, por ejemplo "jorgehmartinez".
+  2. Copia el script de abajo FUERA de este comentario y reemplaza TU-CODIGO por tu código.
+  3. Las visitas aparecen en https://TU-CODIGO.goatcounter.com
+
+  <script data-goatcounter="https://TU-CODIGO.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+-->

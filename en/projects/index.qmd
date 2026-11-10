@@ -1,0 +1,14 @@
+---
+title: "Projects"
+subtitle: "Courses, materials and tools for analyzing data."
+page-layout: full
+listing:
+  contents: projects.yml
+  type: grid
+  grid-columns: 3
+  sort: "date desc"
+  categories: true
+  filter-ui: false
+  sort-ui: false
+  fields: [image, title, description, categories]
+---

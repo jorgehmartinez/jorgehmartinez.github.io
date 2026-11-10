@@ -1,0 +1,5 @@
+---
+title: "Página no encontrada"
+---
+
+La página que buscas no existe o cambió de lugar. Vuelve al [inicio](index.qmd) o revisa el [blog](blog/index.qmd).
