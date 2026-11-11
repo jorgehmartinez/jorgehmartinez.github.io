@@ -64,8 +64,9 @@ Cada entrada se escribe en un solo idioma y aparece en el blog en español y en 
 
 ## Visitas con GoatCounter
 
-1. Crea una cuenta en [goatcounter.com](https://www.goatcounter.com) y elige un código.
-2. Abre `includes/head.html`, copia el script que está dentro del comentario fuera de él y reemplaza `TU-CODIGO`.
+El script ya está activo en `includes/head.html` con el código `jorgehmartinez`.
+Las visitas se ven en <https://jorgehmartinez.goatcounter.com>. Para usar otro código,
+cambia `jorgehmartinez` en ese archivo. GoatCounter no cuenta las visitas desde `localhost`.
 
 ## Cambiar el estilo
 
